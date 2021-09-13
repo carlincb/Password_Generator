@@ -1,92 +1,103 @@
 # Password_Generator
 
-## Your Task
+## Description
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+- What was my motivation? I needed to modify starter code to create an application that enables employees to generate random passwords based on criteria that they've selected.
+- Why did I build this project? I built this project to better understand how JavaScript code dynamically updates its HTML and CSS files.
+- What problem does it solve? This project resolves the unresponsive nature of the webpage through the use of JavaScript.
+- What did I learn? I learned about arrays, "if" statements, "for" loops, variables, and many other keywords used within JavaScript.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## Table of Contents
 
-### User Story
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Links](#links)
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Installation
 
-### Acceptance Criteria
+Although this is simply a webpage and no installation is necessary, there were certain criteria that had to be met in order to complete this project:
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+    User Story
 
-## Mock-Up
+    AS AN employee with access to sensitive data
+    I WANT to randomly generate a password that meets certain criteria
+    SO THAT I can create a strong password that provides greater security
+
+    Acceptance Criteria
+
+    GIVEN I need a new, secure password
+    WHEN I click the button to generate a password
+    THEN I am presented with a series of prompts for password criteria
+    WHEN prompted for password criteria
+    THEN I select which criteria to include in the password
+    WHEN prompted for the length of the password
+    THEN I choose a length of at least 8 characters and no more than 128 characters
+    WHEN asked for character types to include in the password
+    THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+    WHEN I answer each prompt
+    THEN my input should be validated and at least one character type should be selected
+    WHEN all prompts are answered
+    THEN a password is generated that matches the selected criteria
+    WHEN the password is generated
+    THEN the password is either displayed in an alert or written to the page
+
+### Mock-Up
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](Assets/images/03-javascript-homework-demo.png)
+![Mock-Up](Assets/images/03-javascript-homework-demo.png)
 
-## Grading Requirements
+## Usage
+Please see below for examples of this webpage, which demonstrate its functionality:
 
-This homework is graded based on the following criteria: 
+### Initial View
 
-### Technical Acceptance Criteria: 40%
+![1](Assets/images/1.png)
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+###  Initial Prompt
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+![2](Assets/images/2.png)
 
-### Deployment: 32%
+###  *Alert triggered if input is left empty, "Cancel" is selected, or a number outside the required range is entered. 
 
-* Application deployed at live URL.
+![3](Assets/images/3.png)
 
-* Application loads with no errors.
+###  First Option: Numeric Characters 
 
-* Application GitHub URL submitted.
+![4](Assets/images/4.png)
 
-* GitHub repository that contains application code.
+###  Second Option: Special Characters
 
-### Application Quality: 15%
+![5](Assets/images/5.png)
 
-* Application user experience is intuitive and easy to navigate.
+###  Third Option: Lowercase Letters
 
-* Application user interface style is clean and polished.
+![6](Assets/images/6.png)
 
-* Application resembles the mock-up functionality provided in the homework instructions.
+###  Fourth Option: Uppercase Letters
 
-### Repository Quality: 13%
+![7](Assets/images/7.png)
 
-* Repository has a unique name.
+###  Example Password
 
-* Repository follows best practices for file structure and naming conventions.
+![8](Assets/images/8.png)
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+###  *Alert triggered if "Cancel" is selected on all options.
 
-* Repository contains multiple descriptive commit messages.
+![9](Assets/images/9.png)
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
+## Credits
+- https://javascript.info/
+- https://du.bootcampcontent.com/denver-coding-bootcamp/du-den-virt-fsf-pt-08-2021-u-c/-/tree/master/03-JavaScript/02-Homework
+- https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
-## Review
 
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
+## License
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+## Links
+[Live Link](https://carlincb.github.io/Password_Generator/)
+
+[GitHub Link](https://github.com/carlincb/Password_Generator)
