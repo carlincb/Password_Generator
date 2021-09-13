@@ -13,7 +13,7 @@ var maxLength = 128;
 function generatePassword() {
   
   // Created two variables.
-  var newPassword = [];// Created "newPassword" to store all values for the new password created by the function.
+  var newPassword = [];// Created "newPassword" to store all characters for the new password created by the function.
   var potentialCharacters = [];// Created "potentialCharacters" to store all potential characters the user could choose.
   
   //Variable "passwordLength" included to control the character length of the password and coupled with the prompt command so user can input desired length.  
@@ -33,34 +33,36 @@ function generatePassword() {
   
   // Created "if" statement to ensure one option is selected for potential password.
   if(!useNumbers && !useSpecialCharacters && !useUpperCase && !useLowerCase) {
-    alert("Please select at least one option.");
+    alert("Please select at least one option."); //If user clicks "Cancel" on all options this alert is triggered.
     return;
   };
+  // Created "if" statements to input data for potential password when user clicks "OK."
   if(useNumbers===true){
-    newPassword.push(getRandomCharacter(numbers));
-    potentialCharacters=potentialCharacters.concat(numbers);
+    newPassword.push(getRandomCharacter(numbers)); //Used to get a random character from "numbers" and adding it to the "newPassword" array.
+    potentialCharacters=potentialCharacters.concat(numbers); //Used to add all the elements from the "numbers" array to the "potentialCharacters" array, so that the "potentialCharacters" array can later fill out the rest of the password.
   };
   if(useSpecialCharacters===true){
-    newPassword.push(getRandomCharacter(specialCharacters));
-    potentialCharacters=potentialCharacters.concat(specialCharacters);
+    newPassword.push(getRandomCharacter(specialCharacters)); //Used to get a random character from "specialCharacters" and adding it to the "newPassword" array.
+    potentialCharacters=potentialCharacters.concat(specialCharacters); //Used to add all the elements from the "specialCharacters" array to the "potentialCharacters" array, so that the "potentialCharacters" array can later fill out the rest of the password.
   };
   if(useLowerCase===true){
-    newPassword.push(getRandomCharacter(lowerCase));
-    potentialCharacters=potentialCharacters.concat(lowerCase);
+    newPassword.push(getRandomCharacter(lowerCase)); //Used to get a random character from "lowerCase" and adding it to the "newPassword" array.
+    potentialCharacters=potentialCharacters.concat(lowerCase); //Used to add all the elements from the "lowerCase" array to the "potentialCharacters" array, so that the "potentialCharacters" array can later fill out the rest of the password.
   };
   if(useUpperCase===true){
-    newPassword.push(getRandomCharacter(upperCase));
-    potentialCharacters=potentialCharacters.concat(upperCase);
+    newPassword.push(getRandomCharacter(upperCase)); //Used to get a random character from "upperCase" and adding it to the "newPassword" array.
+    potentialCharacters=potentialCharacters.concat(upperCase); //Used to add all the elements from the "upperCase" array to the "potentialCharacters" array, so that the "potentialCharacters" array can later fill out the rest of the password.
   };
 
-  var remainingLength = passwordLength-newPassword.length;
+  var remainingLength = passwordLength-newPassword.length; 
 
   for (let i = 0; i < remainingLength; i++) {
     newPassword.push(getRandomCharacter(potentialCharacters))
   };
-  return newPassword.join('');//Used join tag to convert newPassword from an array to a string.
+  return newPassword.join(''); //Used join keyword to convert "newPassword" from an array to a string.
 };
 
+// Created function to get random characters.
 function getRandomCharacter(array) {
   var randomCharacter=array[Math.floor(Math.random()*array.length)];
   return randomCharacter;
