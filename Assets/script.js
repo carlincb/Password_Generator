@@ -1,4 +1,4 @@
-// Assignment Code
+// The "generateBtn" variable is used to select the "Generate Password" button for the js file.
 var generateBtn = document.querySelector("#generate");
 
 // Declared global variables
@@ -16,10 +16,10 @@ function generatePassword() {
   var newPassword = [];// Created "newPassword" to store all characters for the new password created by the function.
   var potentialCharacters = [];// Created "potentialCharacters" to store all potential characters the user could choose.
   
-  //Variable "passwordLength" included to control the character length of the password and coupled with the prompt command so user can input desired length.  
+  // Variable "passwordLength" included to control the character length of the password and coupled with the prompt command so user can input desired length.  
   var passwordLength = prompt("Please input a number from " + minLength + " to " + maxLength + " to choose the number of characters in your password.");
   
-  //Created "if" statement to exclude passwords that are too long, short, not numbers, or nothing is entered. 
+  // Created "if" statement to exclude passwords that are too long, short, not numbers, or nothing is entered. 
   if(passwordLength < 8 || passwordLength > 128 || passwordLength==="" || passwordLength===NaN){
     alert("Please select a number from 8 to 128 to continue.");
     return;
@@ -53,12 +53,12 @@ function generatePassword() {
     newPassword.push(getRandomCharacter(upperCase)); //Used to get a random character from "upperCase" and adding it to the "newPassword" array.
     potentialCharacters=potentialCharacters.concat(upperCase); //Used to add all the elements from the "upperCase" array to the "potentialCharacters" array, so that the "potentialCharacters" array can later fill out the rest of the password.
   };
-
-  var remainingLength = passwordLength-newPassword.length; 
+  //A variable is created to help make up the remaining length of the password along with a "for" loop.
+  var remainingLength = passwordLength-newPassword.length; //The "remainingLength" variable is set to the length the user requested minus the length of "newPassword" array.
 
   for (let i = 0; i < remainingLength; i++) {
     newPassword.push(getRandomCharacter(potentialCharacters))
-  };
+  }; //The "for" loop is set so that it goes through and adds a random character from the "newPassword" array as many times as the "remainingLength" variable tells it until the requested password length is reached.
   return newPassword.join(''); //Used join keyword to convert "newPassword" from an array to a string.
 };
 
@@ -68,7 +68,7 @@ function getRandomCharacter(array) {
   return randomCharacter;
 };
 
-// Write password to the #password input
+// Password written to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -77,5 +77,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Event listener added to generate button.
 generateBtn.addEventListener("click", writePassword);
