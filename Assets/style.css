@@ -20,7 +20,7 @@ body {
 }
 img {
   text-align: justify;
-  height: 35vh;
+  max-height: 5%;
   width: 100%;
   border-radius: 1rem;
   opacity: 0.5;
@@ -35,7 +35,7 @@ header {
   text-align: center;
   padding: 0.2rem;
   padding-top: 0rem;
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: hsl(206, 17%, 28%);
 }
 
@@ -84,13 +84,13 @@ header {
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
+  border-radius: 2.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0rem 1rem 6rem 0rem rgba(0, 0, 0, 0.2) 0rem
     1rem 1rem 0rem;
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 2.2rem;
-  line-height: 2.2rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   margin: 1.6rem 1.6rem 1.6rem 2rem;
   padding: 1.4rem 3.4rem;
   text-align: center;
@@ -143,11 +143,5 @@ p {
   #password {
     font-size: 2rem;
     color: rgb(10, 10, 77);
-  }
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
   }
 }
