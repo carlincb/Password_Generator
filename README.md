@@ -43,61 +43,58 @@ Although this is simply a webpage and no installation is necessary, there were c
     WHEN the password is generated
     THEN the password is either displayed in an alert or written to the page
 
-### Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![Mock-Up](Assets/images/03-javascript-homework-demo.png)
-
 ## Usage
+
 Please see below for examples of this webpage, which demonstrate its functionality:
 
 ### Initial View
 
 ![1](Assets/images/1.png)
 
-###  Initial Prompt
+### Initial Prompt
 
 ![2](Assets/images/2.png)
 
-###  *Alert triggered if input is left empty, "Cancel" is selected, or a number outside the required range is entered. 
+### \*Alert triggered if input is left empty, "Cancel" is selected, or a number outside the required range is entered.
 
 ![3](Assets/images/3.png)
 
-###  First Option: Numeric Characters 
+### First Option: Numeric Characters
 
 ![4](Assets/images/4.png)
 
-###  Second Option: Special Characters
+### Second Option: Special Characters
 
 ![5](Assets/images/5.png)
 
-###  Third Option: Lowercase Letters
+### Third Option: Lowercase Letters
 
 ![6](Assets/images/6.png)
 
-###  Fourth Option: Uppercase Letters
+### Fourth Option: Uppercase Letters
 
 ![7](Assets/images/7.png)
 
-###  Example Password
+### Example Password
 
 ![8](Assets/images/8.png)
 
-###  *Alert triggered if "Cancel" is selected on all options.
+### \*Alert triggered if "Cancel" is selected on all options.
 
 ![9](Assets/images/9.png)
 
 ## Credits
+
 - https://javascript.info/
 - https://du.bootcampcontent.com/denver-coding-bootcamp/du-den-virt-fsf-pt-08-2021-u-c/-/tree/master/03-JavaScript/02-Homework
 - https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
-
 ## License
+
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 
 ## Links
+
 [Live Link](https://carlincb.github.io/Password_Generator/)
 
 [GitHub Link](https://github.com/carlincb/Password_Generator)
