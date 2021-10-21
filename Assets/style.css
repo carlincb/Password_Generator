@@ -17,9 +17,10 @@ body {
   background-color: #f9fbfd;
 }
 img {
-  text-align: center;
-  height: 25rem;
-  width: 100%;
+  text-align: justify;
+  height: 20rem;
+  width: 99%;
+  border-radius: 1rem;
 }
 .wrapper {
   padding-top: 30px;
