@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 62.5%;
+}
 html,
 body,
 .wrapper {
@@ -18,33 +20,35 @@ body {
 }
 img {
   text-align: justify;
-  height: 20rem;
-  width: 99%;
+  height: 35vh;
+  width: 100%;
   border-radius: 1rem;
+  opacity: 0.5;
 }
 .wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 0.3rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
 
 header {
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
+  padding: 0.2rem;
+  padding-top: 0rem;
+  font-size: 3rem;
   color: hsl(206, 17%, 28%);
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  border-radius: 0.5rem;
+  border-width: 0.1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.2rem 0.8rem 0rem;
   color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  font-size: 2rem;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+  max-width: 80rem;
+  padding: 3rem 4rem;
 }
 
 .card-header::after {
@@ -52,11 +56,11 @@ header {
   display: block;
   width: 100%;
   background: #e7e9eb;
-  height: 2px;
+  height: 0.2rem;
 }
 
 .card-body {
-  min-height: 100px;
+  min-height: 25rem;
 }
 
 .card-footer {
@@ -68,7 +72,7 @@ header {
   display: block;
   width: 100%;
   background: #e7e9eb;
-  height: 2px;
+  height: 0.2rem;
 }
 
 .card-footer::after {
@@ -81,14 +85,14 @@ header {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rem 1rem 6rem 0rem rgba(0, 0, 0, 0.2) 0rem
+    1rem 1rem 0rem;
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin: 1.6rem 1.6rem 1.6rem 2rem;
+  padding: 1.4rem 3.4rem;
   text-align: center;
   cursor: pointer;
 }
@@ -109,29 +113,36 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 8.5rem;
+  font-size: 2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0.2rem dashed #c0c7cf;
+  border-radius: 0.6rem;
   resize: none;
   overflow: hidden;
 }
 
+p {
+  text-align: center;
+  font-size: 3rem;
+  color: hsl(206, 17%, 28%);
+  padding: 1.5rem;
+}
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
+    margin: 1.6rem 0rem 0rem 0rem;
+    padding: 1rem 1.5rem;
   }
 
   #password {
-    font-size: 1rem;
+    font-size: 2rem;
+    color: rgb(10, 10, 77);
   }
 }
 
