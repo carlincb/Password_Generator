@@ -16,7 +16,11 @@ body {
   font-family: "Special Elite", cursive;
   background-color: #f9fbfd;
 }
-
+img {
+  text-align: center;
+  height: 25rem;
+  width: 100%;
+}
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
